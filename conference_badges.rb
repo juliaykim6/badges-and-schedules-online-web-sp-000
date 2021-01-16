@@ -7,9 +7,6 @@ def batch_badge_creator(array)
   names.map do |name|
     "Hello, my name is #{name}."
   end
-  new = []
-  array.each {|badge| new << badge_maker(badge)}
-  new
 end
 
 def assign_rooms(name)
