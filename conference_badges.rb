@@ -5,12 +5,18 @@ end
 
 def batch_badge_creator(names)
   names.map do |name|
-    "Hello, my name is #{name}."
+    badge_maker(name)
   end
 end
 
-def assign_rooms(name, counter)
-  badge_maker(name)
+def assign_rooms(name)
+    new_array= []
+    counter = 1
+    name.each do |name|
+        new_array << ("Hello, #{name}! You'll be assigned to room #{counter}!")
+        counter += 1
+    end
+    return new_array
 end
 
 
